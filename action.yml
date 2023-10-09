@@ -1,0 +1,17 @@
+name: Push data to frontend
+description: >-
+  Move data to aecheck.com / bluearchive-torment.netlify.app
+  Based on cpina/github-action-push-to-another-repository
+inputs:
+  app-type:
+    description: App type
+    required: true
+
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - '${{ inputs.app-type }}'
+branding:
+  icon: git-commit
+  color: green
