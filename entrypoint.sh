@@ -19,7 +19,7 @@ then
 	DESTINATION_REPOSITORY_NAME="aecheck-v3"
 elif [ $APP_TYPE = "bluearchive-torment" ]
 then
-	DESTINATION_REPOSITORY_NAME="bluearchive-torment-search"
+	DESTINATION_REPOSITORY_NAME="bluearchive-torment-front"
 else
 	echo "::error::APP_TYPE not vaild"
 	exit 1
