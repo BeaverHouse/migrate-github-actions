@@ -94,7 +94,7 @@ then
 	rm -rf "$TARGET_ROOT_DIRECTORY/public/image/data"
 	rm -rf "$TARGET_ROOT_DIRECTORY/src/data"
 	rm -rf "$TARGET_ROOT_DIRECTORY/src/i18n"
-	rm -rf "$TARGET_ROOT_DIRECTORY/src/constant/updates.ts"
+	rm -rf "$TARGET_ROOT_DIRECTORY/src/constant/updates.tsx"
 
 	echo "[+] Creating (now empty) directory"
 	mkdir -p "$TARGET_ROOT_DIRECTORY/public/image/data"
@@ -105,7 +105,7 @@ then
 	cp -ra "v3_result/image/." "$TARGET_ROOT_DIRECTORY/public/image/data"
 	cp -ra "v3_result/data/." "$TARGET_ROOT_DIRECTORY/src/data"
 	cp -ra "v3_result/i18n/." "$TARGET_ROOT_DIRECTORY/src/i18n"
-	cp -ra "v3_result/updates.ts" "$TARGET_ROOT_DIRECTORY/src/constant/updates.ts"
+	cp -ra "v3_result/updates.ts" "$TARGET_ROOT_DIRECTORY/src/constant/updates.tsx"
 else
 	echo "[+] Deleting data"
 	rm -rf "$TARGET_ROOT_DIRECTORY/src/data"
