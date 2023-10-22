@@ -105,7 +105,7 @@ then
 	cp -ra "v3_result/image/." "$TARGET_ROOT_DIRECTORY/public/image/data"
 	cp -ra "v3_result/data/." "$TARGET_ROOT_DIRECTORY/src/data"
 	cp -ra "v3_result/i18n/." "$TARGET_ROOT_DIRECTORY/src/i18n"
-	cp -ra "v3_result/updates.ts" "$TARGET_ROOT_DIRECTORY/src/constant/updates.tsx"
+	cp -ra "v3_result/updates.tsx" "$TARGET_ROOT_DIRECTORY/src/constant/updates.tsx"
 else
 	echo "[+] Deleting data"
 	rm -rf "$TARGET_ROOT_DIRECTORY/src/data"
