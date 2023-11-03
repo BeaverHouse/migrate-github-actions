@@ -108,13 +108,16 @@ then
 	cp -ra "v3_result/updates.tsx" "$TARGET_ROOT_DIRECTORY/src/constant/updates.tsx"
 else
 	echo "[+] Deleting data"
+	rm -rf "$TARGET_ROOT_DIRECTORY/public/image"
 	rm -rf "$TARGET_ROOT_DIRECTORY/src/data"
 	rm -rf "$TARGET_ROOT_DIRECTORY/src/constant.js"
 
 	echo "[+] Creating (now empty) directory"
 	mkdir -p "$TARGET_ROOT_DIRECTORY/src/data"
+	mkdir -p "$TARGET_ROOT_DIRECTORY/public/image"
 
 	echo "[+] Copying contents of source repository folder"
+	cp -ra "image/." "$TARGET_ROOT_DIRECTORY/public/image"
 	cp -ra "result_detail/." "$TARGET_ROOT_DIRECTORY/src/data"
 	cp -ra "other/constant.js" "$TARGET_ROOT_DIRECTORY/src/constant.js"
 fi
